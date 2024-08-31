@@ -1,10 +1,3 @@
-import { BASE_URL } from "./api/constans";
+import { Table } from "@/components";
 
-export const App = () => {
-  console.log(BASE_URL)
-  return (
-    <>
-      <div>dsadsa</div>
-    </>
-  );
-};
+export const App = () => <Table />;

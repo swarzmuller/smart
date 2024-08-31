@@ -42,12 +42,6 @@ injectGlobal`
     padding: 0;
     cursor: pointer;
   }
-
-  #root {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-  }
 `;
 
 export const GlobalStyles = () => {

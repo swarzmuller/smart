@@ -8,14 +8,4 @@ export default defineConfig({
   resolve: {
     alias: { "@": path.resolve(__dirname, "./src") },
   },
-
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://jsonplaceholder.typicode.com", // TODO: take from env
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
 });
